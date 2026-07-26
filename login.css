@@ -40,7 +40,7 @@ nav{
     justify-content:center;
     align-items:center;
 }
-.home a.active{
+login a.active{
     color:white;
 }
 .login-box{
