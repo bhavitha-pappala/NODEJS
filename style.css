@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+/* Navigation */
+
+nav{
+    background:#0d6ea8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 35px;
+}
+
+.logo img{
+    width:170px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:40px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.active{
+    font-weight:bold;
+}
+
+/* Banner */
+
+.banner{
+    background:#25b91f;
+    color:white;
+    text-align:center;
+    padding:28px;
+}
+
+.banner h2{
+    font-size:22px;
+}
+
+/* Main Section */
+
+.container{
+    display:flex;
+    gap:40px;
+    padding:40px 30px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:27%;
+    background:white;
+    border-radius:35px;
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:12px;
+    margin-bottom:18px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.sidebar li.active{
+    background:#0d6ea8;
+    color:white;
+}
+
+/* Content */
+
+.content{
+    flex:1;
+    background:white;
+    border-radius:35px;
+    padding:25px;
+    min-height:470px;
+}
+
+.content h2{
+    margin-bottom:15px;
+}
+
+.content p{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+
+.icons i{
+    margin-right:35px;
+    font-size:28px;
+}
