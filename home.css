@@ -29,16 +29,16 @@ nav{
     font-weight: 700;
 }
 .menu a{
-    color:white;
+    color: rgba(255,255,255,0.6);
     text-decoration:none;
 }
 .home{
-    width: 100;
+    width: 100%;
     height: 600px;
     display: flex;
     background:#f6a02d;
 }
-.home a.active{
+.menu a.active{
     color:white;
 }
 .home-content{
