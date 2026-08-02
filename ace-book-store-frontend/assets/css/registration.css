@@ -8,8 +8,7 @@ body{
 }
 nav{
     height: 72px;
-    width: 1527px;
-    top: -3px;
+    width: 100%;
     justify-content: space-between;
     background: #087bb5e0;
     display: flex;
@@ -20,6 +19,12 @@ nav{
     width: 140px;
     height: 44px;
 }
+
+.cart{
+    width: 25px;
+    height: 25px;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -32,6 +37,16 @@ nav{
     color: rgba(255,255,255,0.6);
     text-decoration: none;
 }
+
+.menu a.active{
+    color: #ffffff;
+}
+
+.menu img{
+    width: 25px;
+    height: 25px;
+}
+
 .registration{
     width: 100%;
     height: 600px;
@@ -40,9 +55,7 @@ nav{
     justify-content:center;
     align-items:center;
 }
-.menu a.active{
-    color: white;
-}
+
 .registration-box{
     width: 593px;
     height: 473px;
@@ -55,6 +68,7 @@ nav{
     border-radius: 10px;
     align-items: center;
 }
+
 .registration-box input{
     align-items: center;
     width: 444px;
@@ -64,16 +78,17 @@ nav{
     display: flex;
 }
 .registration-box button{
-    width:250px;
-    height:60px;
-    background:#087bb5;
-    color:white;
-    border:none;
-    border-radius:10px;
-    font-size:20px;
-    font-weight:bold;
-    cursor:pointer;
+    width: 250px;
+    height: 60px;
+    background: #087bb5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
 .registration-box p{
     font-size: 15px;
 }
@@ -96,10 +111,81 @@ nav{
     display: flex;
     gap: 20px;
 }
-.social-icons img{
-    width: 172px;
-    height: 24px;
+
+.social-icons a{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.social-icons a:hover{
+    color: #ffffff
 }
 .footer p{
     font-size: 14px;
+}
+
+@media(max-width: 768px){
+    nav{
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .registration{
+        padding: 20px;
+    }
+
+    .registration-box{
+        width: 90%;
+        min-height: auto;
+        padding: 35px 20px;
+    }
+
+    .registration-box input{
+        width: 90%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .registration-box button{
+        width: 70%;
+        height: 50px;
+    }
+
+    .footer{
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .social-icons img{
+        width: 150px;
+    }
+}
+
+@media(max-width: 400px){
+    .registration-box input{
+        width: 100%;
+    }
+
+    .registration-box button{
+        width: 100%;
+    }
+
+    .registration-box h1{
+        font-size: 25px;
+    }
 }
